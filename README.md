@@ -1,2 +1,2 @@
 # sketch-guess.io
-##### created by : Christopher Stapler
+##### created by : Christopher Stapler and Venecia Alvarez
