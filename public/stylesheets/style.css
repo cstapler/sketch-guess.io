@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+canvas {
+  cursor: crosshair;
+  border: 10px solid;
+}
+div.scroll {
+    width: 400px;
+    height: 110px;
+    overflow: scroll;
+    border:1px solid black;
+}
+
+#leaderboardtitle{
+  font-weight: bold;
+}

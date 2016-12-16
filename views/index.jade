@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  hr
+  p#directions
+  hr
+  p#leaderboardtitle Leaderboard
+  p#leaderboard 
+  hr
+    
+  button#start-game-btn(type="button") Start Game
+    
+  p#game-info
+  p#timer-container    
+    
+  canvas#drawing(width="800", height="500")
+  |     
+  .canvas-btns
+    button#clear-btn(type="button")
+      b Clear
+    |       
+    button.color-btn(type="button", data-color="black") Black
+    |       
+    button.color-btn(type="button", data-color="blue") Blue
+    |       
+    button.color-btn(type="button", data-color="red") Red
+    |       
+    button.color-btn(type="button", data-color="orange") Orange
+    |       
+    button.color-btn(type="button", data-color="green") Green
+    |       
+    select#width-select(name="Select width of cursor")
+      option(value="2") 2px
+      |         
+      option(value="5") 5px
+      |         
+      option(value="10") 10px
+      |         
+      option(value="25") 25px
+  |     
+  .chat-container
+    br
+    hr
+    |         
+    h2 Chatroom
+    |         
+    #feeddiv.scroll
+      p#chat-feed
+    |         
+    input#new-message
+    button#send-message(type="button") Send
