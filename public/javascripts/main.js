@@ -15,7 +15,7 @@ $(document).ready(function(){
    var width   = canvas.width;
    var height  = canvas.height;
    var username = sessionStorage.getItem("current-user");
-   var socket  = io.connect('http://localhost:3030', {query: "username=" + username});
+   var socket  = io.connect('https://fierce-anchorage-63287.herokuapp.com:3030', {query: "username=" + username});
    refreshLeaderboard();
 
    canvas.onmousedown = function(e){ mouse.click = true; };
