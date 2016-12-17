@@ -8,6 +8,26 @@ body {
 .top15 { margin-top:15px; }
 .top17 { margin-top:17px; }
 .top30 { margin-top:30px; }
+.color-blue {
+  color: white;
+  background-color: blue;
+}
+.color-black {
+  color: white;
+  background-color: black
+}
+.color-red{
+  color:white;
+  background-color: red;
+}
+.color-orange {
+  color: white;
+  background-color: orange;
+}
+.color-green {
+  color: white;
+  background-color: green;
+}
 
 a {
   color: #00B7FF;
