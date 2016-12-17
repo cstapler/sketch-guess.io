@@ -7,12 +7,19 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     script(src='/javascripts/login.js', charset='utf-8')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body  
-    h1= title
-    p Please enter username to login to #{title}
-    label(for='username')
-        | Username:
-        input#username(type='text', name='username', value='')
-    br
-    br
-    button#login(type='button', name='button') login
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    div.container
+      div.row
+        div.login-container.col-xs-10.col-xs-offset-2.col-lg-8.col-lg-offset-2
+          h1.col-xs-offset-2.col-lg-offset-4.top30= title
+          hr
+          div.row
+            p.small.col-xs-offset-2.col-lg-offset-4.top30 Please pick a username to login to #{title}
+          div.row
+            div.col-xs-10.col-xs-offset-1.col-lg-8.col-lg-offset-2
+              div.form-group
+                input#username.form-control(type='text', name='username', value='' placeholder='Username')
+          div.row
+          div
+          button#login.top10.col-xs-4.col-lg-4.col-xs-offset-3.col-lg-offset-4.btn.btn-primary(type='button', name='button') login
