@@ -39,7 +39,7 @@ canvas {
 div.scroll {
     width: 400px;
     height: 110px;
-    overflow: scroll;
+    overflow-y: auto;
     border:1px solid black;
 }
 
