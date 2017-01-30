@@ -39,14 +39,15 @@ block content
           option(value="5") 5px        
           option(value="10") 10px      
           option(value="25") 25px  
-    div.chat-container
+    div.row.chat-container
       hr  
-      div.col-lg-offset-4 
-        h2 Chatroom         
-        #feeddiv.scroll
-        p#chat-feed    
+      div.row.col-lg-offset-4 
+        h2 Chatroom
+        div         
+          div#feeddiv.scroll
+            p#chat-feed    
         div.row
           div.col-lg-4    
             input#new-message.form-control(placeholder="Enter text here")
-        div.row  
+          div.col-lg-2  
             button#send-message.btn(type="button") Send
